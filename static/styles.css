@@ -1,0 +1,135 @@
+html {
+  overflow-y: scroll;
+}
+
+.titulo {
+  text-align: center;
+  padding: 100px;
+}
+
+.titulo2 {
+  padding-top: 30px;
+}
+
+.source {
+  font-size: smaller;
+}
+
+.abouttext {
+  padding-right: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 320px 320px 320px 320px;
+  grid-template-rows: 300px 300px auto;
+  column-gap: 15px;
+  row-gap: 25px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg {
+  position: absolute;
+  top: 70px;
+  right: 80%;
+  width: 20%;
+  height: 100%;
+  background-image: url("about.jpg");
+  background-position: 0 0;
+  background-size: auto 100%;
+  background-repeat: repeat-y;
+}
+
+.name {
+  font-size: smaller;
+  text-align: center;
+}
+
+.text {
+  float: none;
+  padding-left: 20%;
+}
+
+h3 {
+  margin-top: 40%;
+}
+
+.classification {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #eac976;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid black;
+}
+
+body {
+  overflow: hidden;
+}
+
+.campo {
+  width: 100%;
+  height: 800px;
+}
+
+#mothimg,
+#lampimg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#lampimg {
+  cursor: pointer;
+}
