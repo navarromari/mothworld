@@ -17,3 +17,6 @@ def brazil():
 @app.route("/lamp")
 def lamp():
   return render_template('light.html')
+
+if __name__ == "__main__":
+  app.run(debug=True)
