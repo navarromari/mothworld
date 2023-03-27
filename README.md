@@ -1,5 +1,5 @@
 <h1 align="center">Mothworld</h1>
-<h3 align="center">Simple informative web application about moths</h3>
+<h3 align="center">Simple informative web application about moths developed as part of my introductory studies in computer science at Harvard's CS50 </h3>
 <h3 align="center"><a href="https://mothworld.herokuapp.com/">mothworld.herokuapp.com</a></h3>
 
 
